@@ -734,4 +734,807 @@
             margin-bottom: 1.5rem;
         }
 
-        .practic
+        .practice-icon svg {
+            width: 26px;
+            height: 26px;
+        }
+
+        .practice-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            color: var(--navy-900);
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        .practice-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            background: var(--navy-900);
+            color: var(--white);
+        }
+
+        .testimonials .section-title,
+        .testimonials .section-subtitle {
+            color: var(--white);
+        }
+
+        .testimonials .section-subtitle {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(201, 169, 97, 0.2);
+            padding: 2rem;
+        }
+
+        .testimonial-stars {
+            color: var(--gold);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.15em;
+        }
+
+        .testimonial-card p {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .testimonial-avatar {
+            width: 36px;
+            height: 36px;
+            background: var(--gold);
+            color: var(--navy-900);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .testimonial-role {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* CONTACT / BOOKING */
+        .contact {
+            background: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            color: var(--navy-900);
+            margin-bottom: 1.25rem;
+            font-weight: 700;
+        }
+
+        .contact-info > p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-detail {
+            display: flex;
+            gap: 1rem;
+            align-items: start;
+            margin-bottom: 1.75rem;
+        }
+
+        .contact-detail-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--cream);
+            color: var(--gold-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-detail-icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .contact-detail-title {
+            font-weight: 600;
+            color: var(--navy-900);
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-detail-text {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .booking-form {
+            background: var(--cream);
+            padding: 2.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--navy-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border: 1px solid var(--border);
+            background: var(--white);
+            font-family: inherit;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.15);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 110px;
+        }
+
+        .form-submit {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .form-note {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .form-message {
+            margin-top: 1rem;
+            padding: 0.85rem 1rem;
+            font-size: 0.9rem;
+            text-align: center;
+            display: none;
+        }
+
+        .form-message.success {
+            display: block;
+            background: rgba(52, 168, 83, 0.1);
+            color: #1e7e34;
+            border: 1px solid rgba(52, 168, 83, 0.3);
+        }
+
+        .form-message.error {
+            display: block;
+            background: rgba(220, 53, 69, 0.08);
+            color: #c0392b;
+            border: 1px solid rgba(220, 53, 69, 0.3);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--navy-900);
+            color: rgba(255, 255, 255, 0.6);
+            padding: 3rem 0 2rem;
+            border-top: 1px solid rgba(201, 169, 97, 0.15);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 968px) {
+            .hero-content,
+            .about-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .practice-grid,
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: var(--navy-900);
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 2rem;
+                transition: var(--transition);
+                gap: 1.5rem;
+                box-shadow: var(--shadow-xl);
+            }
+
+            .nav-links.open {
+                right: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .trust-badge {
+                right: 10px;
+            }
+
+            .about-quote {
+                position: static;
+                margin-top: 1.5rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            :root {
+                --section-padding: 4rem 0;
+            }
+
+            .practice-grid,
+            .testimonial-grid,
+            .form-row,
+            .credentials {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                gap: 1.5rem;
+                flex-wrap: wrap;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .hero-actions .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <span class="logo-mark">A</span>
+                <span class="logo-text">[Name]</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#practice">Practice Areas</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="btn btn-primary nav-cta">Book Consultation</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-eyebrow">Corporate &amp; Civil Law</span>
+                <h1 class="hero-title">Trusted Legal <span class="accent">Counsel</span> When It Matters Most</h1>
+                <p class="hero-subtitle">
+                    Over a decade of experience guiding individuals and businesses through complex legal
+                    matters with clarity, discretion, and results-driven strategy.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+                    <a href="#practice" class="btn btn-secondary">Our Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <div class="hero-stat-value">15+</div>
+                        <div class="hero-stat-label">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-value">400+</div>
+                        <div class="hero-stat-label">Cases Resolved</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-value">98%</div>
+                        <div class="hero-stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="photo-frame photo-corners">
+                    <span></span>
+                    <div class="photo-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12z"/>
+                            <path d="M4 21.8c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+                        </svg>
+                        Portrait
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-value">A+</div>
+                    <div class="trust-badge-text">Bar Association Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+        <div class="container about-content">
+            <div class="about-image">
+                <div class="about-image-accent"></div>
+                <div class="about-image-main">
+                    <div class="photo-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="60" height="60">
+                            <path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12z"/>
+                            <path d="M4 21.8c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="about-quote">
+                    <div class="about-quote-mark">"</div>
+                    <p>Every client deserves clarity, not just representation.</p>
+                </div>
+            </div>
+            <div class="about-text">
+                <span class="section-label">About [Name]</span>
+                <h2>Dedicated to Protecting What Matters to You</h2>
+                <p class="lead">
+                    With over 15 years of practice in corporate and civil law, [Name] has built a reputation
+                    for meticulous preparation, honest counsel, and strong advocacy inside and outside the courtroom.
+                </p>
+                <p>
+                    From contract disputes to business formation, family matters, and civil litigation, every case
+                    is approached with the same rigor: understand the full picture, explain the options plainly,
+                    and pursue the outcome that best serves the client.
+                </p>
+                <div class="credentials">
+                    <div class="credential">
+                        <div class="credential-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M12 2 2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="credential-title">Bar Certified</div>
+                            <div class="credential-text">Licensed &amp; in good standing</div>
+                        </div>
+                    </div>
+                    <div class="credential">
+                        <div class="credential-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <circle cx="12" cy="8" r="4"/>
+                                <path d="M4 21.5c0-4 3.6-7 8-7s8 3 8 7"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="credential-title">400+ Clients</div>
+                            <div class="credential-text">Represented since 2011</div>
+                        </div>
+                    </div>
+                    <div class="credential">
+                        <div class="credential-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="credential-title">Confidential</div>
+                            <div class="credential-text">Strict client privilege</div>
+                        </div>
+                    </div>
+                    <div class="credential">
+                        <div class="credential-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="credential-title">Responsive</div>
+                            <div class="credential-text">Fast, direct communication</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRACTICE AREAS -->
+    <section class="section practice-areas" id="practice">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Handle</span>
+                <h2 class="section-title">Practice Areas</h2>
+                <p class="section-subtitle">Focused expertise across the matters that affect you and your business most.</p>
+            </div>
+            <div class="practice-grid">
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <rect x="3" y="7" width="18" height="13" rx="1"/>
+                            <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                        </svg>
+                    </div>
+                    <h3>Corporate Law</h3>
+                    <p>Business formation, contracts, mergers, and ongoing corporate governance counsel.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M12 3v18M5 8l-3 6a3 3 0 0 0 6 0l-3-6zM19 8l-3 6a3 3 0 0 0 6 0l-3-6zM5 8h14M9 3h6"/>
+                        </svg>
+                    </div>
+                    <h3>Civil Litigation</h3>
+                    <p>Representation in disputes, negotiations, and court proceedings from filing to resolution.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>Family Law</h3>
+                    <p>Divorce, custody, and family matters handled with discretion and clear guidance.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>
+                        </svg>
+                    </div>
+                    <h3>Real Estate</h3>
+                    <p>Property transactions, lease agreements, and real estate dispute resolution.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <path d="M14 2v6h6"/>
+                        </svg>
+                    </div>
+                    <h3>Contract Review</h3>
+                    <p>Drafting and review of agreements to protect your interests before you sign.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+                        </svg>
+                    </div>
+                    <h3>Estate Planning</h3>
+                    <p>Wills, trusts, and succession planning to protect your family's future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Client Voices</span>
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">Results built on trust, communication, and dedicated advocacy.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Clear guidance from day one. I always knew where my case stood and what to expect next."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">R</div>
+                        <div>
+                            <div class="testimonial-name">R. Hamdi</div>
+                            <div class="testimonial-role">Business Owner</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Handled a difficult family matter with real care and professionalism. Highly recommended."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <div class="testimonial-name">S. Amrani</div>
+                            <div class="testimonial-role">Private Client</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Reviewed our contracts thoroughly and caught issues we would have missed. Saved us real money."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">K</div>
+                        <div>
+                            <div class="testimonial-name">K. Benali</div>
+                            <div class="testimonial-role">Startup Founder</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / BOOKING -->
+    <section class="section contact" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <span class="section-label">Get in Touch</span>
+                <h2>Book Your Consultation</h2>
+                <p>
+                    Fill out the form and we'll get back to you shortly to confirm your appointment.
+                    All inquiries are treated with full confidentiality.
+                </p>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-detail-title">Phone</div>
+                        <div class="contact-detail-text">+000 000 000 000</div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="m22 6-10 7L2 6"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-detail-title">Email</div>
+                        <div class="contact-detail-text">contact@example.com</div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-detail-title">Office</div>
+                        <div class="contact-detail-text">Downtown Business District</div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="booking-form" id="consultationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="caseType">Case Type</label>
+                        <select id="caseType" name="caseType" required>
+                            <option value="">Select...</option>
+                            <option value="Corporate Law">Corporate Law</option>
+                            <option value="Civil Litigation">Civil Litigation</option>
+                            <option value="Family Law">Family Law</option>
+                            <option value="Real Estate">Real Estate</option>
+                            <option value="Contract Review">Contract Review</option>
+                            <option value="Estate Planning">Estate Planning</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="preferredDate">Preferred Date</label>
+                    <input type="date" id="preferredDate" name="preferredDate">
+                </div>
+                <div class="form-group">
+                    <label for="caseDesc">Brief Description</label>
+                    <textarea id="caseDesc" name="caseDesc" maxlength="1500" placeholder="Tell us briefly about your situation..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit" id="submitBtn">Request Consultation</button>
+                <div class="form-message" id="formMessage"></div>
+                <p class="form-note">Your information is kept strictly confidential.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <span class="logo-mark">A</span>
+                    <span class="logo-text" style="color: white;">[Name]</span>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#practice">Practice Areas</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span id="year"></span> [Name] Law Office. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        // Mobile menu
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('open');
+            });
+        });
+
+        // Footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Consultation form submit
+        const form = document.getElementById('consultationForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formMessage = document.getElementById('formMessage');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            formMessage.className = 'form-message';
+            formMessage.textContent = '';
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            const data = {
+                fullName: document.getElementById('fullName').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                caseType: document.getElementById('caseType').value,
+                preferredDate: document.getElementById('preferredDate').value,
+                caseDesc: document.getElementById('caseDesc').value
+            };
+
+            try {
+                const res = await fetch('/api/consultation', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const result = await res.json();
+
+                if (res.ok && result.ok) {
+                    formMessage.className = 'form-message success';
+                    formMessage.textContent = result.message || 'Your request has been received successfully.';
+                    form.reset();
+                } else {
+                    formMessage.className = 'form-message error';
+                    formMessage.textContent = result.error || 'Something went wrong. Please try again.';
+                }
+            } catch (err) {
+                formMessage.className = 'form-message error';
+                formMessage.textContent = 'Could not send your request. Please check your connection and try again.';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Request Consultation';
+            }
+        });
+    </script>
+</body>
+</html>
